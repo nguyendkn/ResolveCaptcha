@@ -53,7 +53,7 @@ def build_model(input_shape, num_classes):
 # Define the main function
 def main():
     # Set the path to the captcha images and labels
-    captcha_dir = 'images'
+    captcha_dir = 'facebook_captcha_labels'
     label_file = 'labels.txt'
     # Load the captcha images and labels
     captcha_images = []
@@ -73,7 +73,7 @@ def main():
         input_shape = (IMAGE_WIDTH, IMAGE_HEIGHT, 1)
         model = build_model(input_shape, num_classes)
         # Train the model
-        model.fit(x_train, y_train, batch_size=32, epochs=100, validation_split=0.2)
+        model.fit(x_train, y_train, batch_size=32, epochs=100, validation_split=0.1)
         # Save the model
         model.save('captcha_model.h5')
 

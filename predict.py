@@ -37,5 +37,5 @@ def predict_captcha(image_path):
         captcha_pred_str = ''.join([label_map[i] for i in np.argmax(captcha_pred, axis=1)])
         return captcha_pred_str
     
-predicted_captcha = predict_captcha("images\\2p2y8.png")
+predicted_captcha = predict_captcha("test\\3abpvk.png")
 print(predicted_captcha)

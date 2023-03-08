@@ -2,7 +2,7 @@ import os
 import csv
 
 # Set the path to the directory containing the captcha images
-captcha_dir = 'images'
+captcha_dir = 'facebook_captcha_labels'
 
 # Initialize an empty list to store the file names and titles
 captcha_files = []
